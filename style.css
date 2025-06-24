@@ -1,23 +1,27 @@
 /* Project Section */
 .projects-section {
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
   text-align: center;
+  background-color: #121212;
 }
 
 .projects-section h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #1e90ff;
   margin-bottom: 2rem;
 }
 
-/* Grid Layout for projects */
+/* Grid that adapts to screen size */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* Individual Project Card */
+/* Individual Project Cards */
 .project-card {
   background: #1a1a1a;
   padding: 1rem;
@@ -72,23 +76,24 @@
   transform: translateX(0);
 }
 
-/* ---------------- MOBILE OPTIMIZATION ---------------- */
+/* Responsive Fixes */
 @media (max-width: 768px) {
   .projects-section {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .projects-section h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .project-card {
     text-align: center;
+    padding: 1.2rem;
   }
 
   .project-card h3 {
